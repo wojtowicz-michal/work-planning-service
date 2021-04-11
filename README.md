@@ -11,7 +11,7 @@ Serverless computing is an execution model where the cloud provider (AWS in this
 
 ## Configuration
 If you want to run the API with your own AWS instance, you need to configure services first.
-- Set up [DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SettingUp.DynamoWebService.html), create 2 tables - EMPLOYEES and WORK_SCHEDULE. Make sure you have assigned the correct partition keys, employeeID (N), and primaryKey (N).
+- Set up [DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SettingUp.DynamoWebService.html), create 2 tables - EMPLOYEES and WORK_SCHEDULE. Make sure you have assigned the correct partition keys, employee_id (N), and primary_key (N).
 - Configure  [API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-as-simple-proxy-for-http.html) based on endpoints in the github repository. Try to import it with generated API documentation, you can find it in the resources directory.
 - Create [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-java.html) for each endpoint and assign it the appropriate roles in the IAM console.
 - Make sure each role is linked to the tables by the Amazon Resource Name (ARN).
