@@ -7,7 +7,7 @@ Serverless computing is an execution model where the cloud provider (AWS in this
 <p align="center">
   <img src="resources/aws.png"/>
 </p>
-
+<br>
 
 ## Configuration
 If you want to run the API with your own AWS instance, you need to configure services first.
